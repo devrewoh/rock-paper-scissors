@@ -3,40 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles-main.css" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <h1>Rock Paper Scissors Game</h1>
-    <script>
-      function getComputerChoice() {
-        const randomNum = Math.floor(Math.random() * 3);
-
-        const ROCK = 0;
-        const PAPER = 1;
-        const SCISSORS = 2;
-
-        let randomDecision;
-
-        if (randomNum === ROCK) {
-          randomDecision = "ROCK";
-        } else if (randomNum === PAPER) {
-          randomDecision = "PAPER";
-        } else if (randomNum == SCISSORS) {
-          randomDecision = "SCISSORS";
-        }
-        return console.log(randomDecision);
-      }
-      // returns NPC choice at random
-      // getComputerChoice();
-
-      function playRound(playerSelection, computerSelection) {
-        if (playerSelection === computerSelection) {
-          roundWinner = "tie";
-        }
-        const playerSelection = prompt("Please enter ROCK, PAPER or SCISSORS:");
-
-        // if (playerSelection)
-      }
-    </script>
+    <h2>Scoreboard</h2>
+    <script type="text/javascript" src="script-main.js"></script>
   </body>
 </html>
